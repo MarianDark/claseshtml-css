@@ -1,0 +1,92 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 667px;
+}
+
+.featured {
+    min-width: 98%;
+}
+
+.main-img {
+    min-width: 65%;
+    min-height: 250px;
+    background-image: url('./img/lindo-gatito-domestico-sienta-ventana-mirando-fuera-ia-generativa_188544-12519.avif');
+    background-size: cover;
+    background-position: center;
+}
+
+.main-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.firstline-container {
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+}
+
+.main-text-container {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-desc {
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.main-meta {
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.main-subs-container {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: 700;
+}
+
+.main-subs-container-napa {
+    display: none;
+}
+
+@media screen and (min-width:667px) {
+    .container {
+        min-width: 1200px;
+    }
+    .featured {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main-subs-container {
+        display: none;
+    }
+    
+    .main-subs-container-napa {
+        padding: 8px;
+        display: block;
+        flex-direction: column;
+    }
+
+    .main-subs-container-napa > div {
+        font-size: 0.8rem;
+        font-weight: 700;
+        margin-top: 8px;
+    }
+
+    .main-text-container {
+        justify-content: flex-start;
+    }
+
+}

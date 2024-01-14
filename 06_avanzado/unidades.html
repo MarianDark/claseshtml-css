@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+
+        /* PORCENTAJE */
+/*
+        .container {
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            max-width: 75%;
+            border: 2px darkcyan solid;
+        }
+
+        .card {
+            width: 250px;
+            height: 25px;
+            margin: 10px;
+            background-color: aqua;
+            min-width: 40%;
+        }
+        */
+
+        .html {
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            max-width: 75vw;  /* 75% ancho de la pantalla */
+            min-height: 50vh; /* 50% del alto de la pantalla   */
+            border: 2px darkcyan solid;
+
+        }
+
+        .card {
+            width: 250px;
+            min-height: 10vh;
+            margin: 10px;
+            background-color: aqua !important;
+            min-width: 30%;
+            font-size: 3rem; /* 3x el size del elemento HTML*/ 
+            font-size: 3em; /* 3x el size del su elemento padre (container)*/ 
+        }
+
+        .calc {
+            width: calc(30% + 50px);
+        }
+
+
+        #test {
+            background-color: blueviolet;
+        }
+        
+    </style>
+<body>
+
+    <div class="container">
+        <div class="card" id="test">Texto, Texto, Texto</div>
+        <div class="card">Texto, Texto, Texto</div>
+        <div class="card calc"></div>
+
+
+
+        <a href="media_query.html" class="link">Ir a media query</a>
+    </div>
+    
+</body>
+</html>

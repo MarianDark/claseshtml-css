@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* GENERAL */
+
+        .container {
+            background-color: red;
+            height: 300px;
+        }
+
+        /* MOVIL */
+        @media screen and (max-width: 576px) {
+            .container {
+                width: 250px; 
+            } 
+        }
+
+        /* pc */
+
+        @media screen and (min-width: 980px ){
+            .container {
+                width: 90%;
+                background-color: blue; 
+            }
+        }
+
+
+        /* TABLET*/
+
+        @media screen and (min-width: 577px) and (max-width: 979px) {
+            .container {
+                width: 600px;
+                background-color: pink; 
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <a href="./unidades.html" target="_blank">volver a unidades</a>
+    </div>
+    
+</body>
+</html>
